@@ -1,0 +1,38 @@
+{
+   "name": "new-typeorm-project",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/node": "^14.0.14",
+      "ts-node": "8.10.2",
+      "typescript": "3.9.6"
+   },
+   "dependencies": {
+      "@types/bcryptjs": "^2.4.2",
+      "@types/body-parser": "^1.19.0",
+      "@types/cors": "^2.8.6",
+      "@types/express": "^4.17.11",
+      "@types/jsonwebtoken": "^8.5.0",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "class-validator": "^0.12.2",
+      "cookie-session": "^1.4.0",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "fs": "0.0.1-security",
+      "https": "^1.0.0",
+      "jsonwebtoken": "^8.5.1",
+      "path": "^0.12.7",
+      "pg": "^8.5.1",
+      "ts-node-dev": "^1.0.0-pre.51",
+      "typeorm": "0.2.25"
+   },
+   "scripts": {
+      "tsc": "tsc",
+      "start": "ts-node ./src/index.ts",
+      "dev": "ts-node ./src/index.ts",
+      "cron": "ts-node ./src/cron.ts",
+      "prod": "tsc && node ./build/app.js",
+      "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run"
+   }
+}
